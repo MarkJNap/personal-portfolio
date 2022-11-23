@@ -59,3 +59,29 @@ span {
     box-shadow: 1px 1px 15px #fff;
     transition: .3s;
 }
+
+.navbar a:hover {
+    border-bottom: 4px solid rgb(92, 145, 243);
+    padding: 3px 10px;
+    box-shadow: none;
+    transition: .3s;
+
+}
+.navbar a:active {
+    color: gray;
+    transition: .1s;
+}
+
+.hero-image {
+    width: 100%;
+    min-height: 100vh;
+    background-image:url("/assets/images/stars-bright.jpg");
+    background-size:cover;
+    background-position:center;
+    position: fixed;
+    z-index: -1;
+}
+
+img {
+    height: 100px;
+}
