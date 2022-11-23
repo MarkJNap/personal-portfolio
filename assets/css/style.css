@@ -9,6 +9,7 @@ body {
     display: inline-block;
 }
 
+
 header {
     display: flex;
     position: fixed;
@@ -48,7 +49,8 @@ span {
     letter-spacing: 3px;
     text-transform: uppercase;
     text-decoration: none;
-    color: white; text-shadow: black 0.1em 0.1em 0.2em;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
     background-color: transparent;
     padding: 15px 10px;
     margin-left: 10px;
@@ -86,6 +88,7 @@ img {
 .about {
     width: 80%;
     color: #fff;
+    text-shadow: black 0.1em 0.1em 0.2em;
     display: flex;
     margin-left: 20%;
     margin-top: 15%;
@@ -97,8 +100,8 @@ img {
     height: 400px;
     width: 300px;
     border: 1px solid white;
-    border-radius: 15%;
     box-shadow: 0px 0px 15px rgb(233, 252, 66);
+    border-radius: 15%;
 }
 
 .about-text {
@@ -132,3 +135,51 @@ img {
     box-shadow: 0px 0px 15px rgb(233, 252, 66);
 
 }
+
+.work {
+    width: 95%;
+    color: #fff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: default;
+}
+
+.work h1 {
+    width: 100%;
+    margin-top: 15%;
+    padding-bottom: 50px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.hero-project {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    
+}
+
+.hero-project img {
+    height: 600px;
+    width: 100%;
+    border: 1px solid white;
+    box-shadow: 0px 0px 15px rgb(233, 252, 66);
+    opacity: 75%;
+}
+
+.hero-project h2 {
+    position:absolute;
+    top: 15px;
+}
+
+.hero-project p {
+    position: absolute;
+    top: 50px;
+    /* display: none; */
+}
+
+/* Best media screen widths? Eg Small Screen (max-width 992?) and Mobile (max-width 768?) */
