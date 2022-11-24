@@ -100,6 +100,8 @@ img {
 .image-me {
     display: flex;
     height: 40vh;
+    max-height: 700px;
+    max-width: 500px;
     width: 30vh;
     border: 1px solid white;
     box-shadow: 0px 0px 15px rgb(233, 252, 66);
@@ -180,11 +182,11 @@ img {
     width: 100%;
     position: relative;
     justify-content: center;
-    
 }
 
 .hero-project img {
-    height: 600px;
+    height: 60vh;
+    max-height: 800px;
     width: 100%;
     border: 1px solid white;
     box-shadow: 0px 0px 15px rgb(233, 252, 66);
@@ -212,6 +214,7 @@ img {
 
 .other-projects img {
     height: 30vh;
+    max-height: 500px;
     width: 100%;
     opacity: 55%;
     border: 1px solid white;
