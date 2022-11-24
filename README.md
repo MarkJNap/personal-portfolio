@@ -1,4 +1,4 @@
-#My Personal Portfolio
+# My Personal Portfolio
 
 ## Description
 For this project I created a personal website portfolio from scratch using both CSS and HTML. The creation of such a page is important to showcase my skills and highlight my work. This will help me on my journey as I become a full-stack developer by being a spot for potential job recruiters to find me. In the creative proccess of making this I experienced a lot of trial and error as I set my goals too high initially for the length of time I had. Still some issues I need to work out invovling screen resizing and having cleaner css.
