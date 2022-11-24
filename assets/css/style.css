@@ -1,3 +1,4 @@
+/* Universal Selector  */
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +7,20 @@
     box-sizing: border-box;
 }
 
+/* One off or little additions */
 body {
     display: inline-block;
 }
 
+span {
+    color:cyan;
+}
+
+img {
+    transition: 0.3s;
+}
+
+/* The header and navigation bar  */
 header {
     display: flex;
     position: fixed;
@@ -28,10 +39,6 @@ header {
     display: inline-block;
     font-size: 48px;
     letter-spacing: 5px;
-}
-
-span {
-    color:cyan;
 }
 
 .navbar {
@@ -60,6 +67,7 @@ span {
     transition: .3s;
 }
 
+/* Pseduo elements added for effects on navlinks */
 .navbar a:hover {
     border-bottom: 4px solid cyan;
     padding: 3px 10px;
@@ -72,6 +80,7 @@ span {
     transition: .1s;
 }
 
+/* The main background for the page */
 .hero-image {
     width: 100%;
     min-height: 100vh;
@@ -82,11 +91,7 @@ span {
     z-index: -1;
 }
 
-img {
-    height: 100px;
-    transition: 0.3s;
-}
-
+/* 'Call to action' area with my info and about me */
 .about {
     width: 100%;
     color: #fff;
@@ -96,7 +101,6 @@ img {
     padding-top: 20%;
     cursor: default;
 }
-
 .image-me {
     display: flex;
     height: 40vh;
@@ -146,6 +150,7 @@ img {
 
 }
 
+/* Portfolio's Work section containing all projects */
 .work {
     width: 100%;
     color: #fff;
@@ -177,6 +182,7 @@ img {
     transition: 0.8s;
 }
 
+/* Main project to show off in larger size */
 .hero-project {
     display: flex;
     width: 100%;
@@ -204,6 +210,7 @@ img {
     top: 50px;
 }
 
+/* Seconadry projects */
 .other-projects {
     display: flex;
     position: relative;
@@ -231,7 +238,7 @@ img {
     position: absolute;
     top: 50px;
 }
-
+/* Contact info and footer combined */
 .contact {
     display: flex;
     justify-content: space-around;
@@ -298,8 +305,8 @@ img {
     transition: .1s;
     flex-direction: column;
 }
-/* Best media screen widths? Eg Small Screen (max-width 992?) and Mobile (max-width 768?) */
 
+/* For screen readability on smaller screens, having small issues still needing to work out */
 @media only screen and (max-width: 1200px) {
     header {
         flex-direction: column;
@@ -308,6 +315,9 @@ img {
     header ul {
         justify-content: center;
     }
+    .hero-image {
+        min-height: 120vh;
+    }
 
     .about {
         flex-direction: column;
@@ -315,12 +325,13 @@ img {
     }
 
     .about-text {
-        width: 50%;
+        width: 40vw;
         text-align: center;
         justify-content: center;
         margin: 0px;
     }
     .about-text h3, .about-text p {
+        width: 100%;
         margin: 0px;
         margin-top: 10px;
         align-items: center;
@@ -342,13 +353,19 @@ img {
     }
     .contact {
         flex-direction: column;
+        margin-bottom: 20px;
     }
     .contact h2 {
         font-size: 30px;
         letter-spacing: 1px;
+        margin-bottom: 5px;
+    }
+    .contact p {
+        margin-bottom: 30px;
     }
     .contact a {
         margin-top: 8%;
+        display: inline;
     }
     
 }
@@ -376,5 +393,8 @@ img {
     }
     .contact ul {
         justify-content: space-between;
+    }
+    .contact a {
+        display: block;
     }
 }
