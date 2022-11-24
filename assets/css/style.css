@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
 }
@@ -20,7 +21,7 @@ header {
     width: 100%;
     color: white; text-shadow: black 0.1em 0.1em 0.2em;
     cursor: default;
-
+    z-index: 1;
 }
 
 .logo {
@@ -86,11 +87,11 @@ img {
 }
 
 .about {
-    width: 80%;
+    width: 100%;
     color: #fff;
     text-shadow: black 0.1em 0.1em 0.2em;
     display: flex;
-    margin-left: 20%;
+    justify-content: center;
     margin-top: 15%;
     cursor: default;
 }
@@ -141,7 +142,6 @@ img {
     color: #fff;
     text-shadow: black 0.1em 0.1em 0.2em;
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
     cursor: default;
@@ -173,13 +173,38 @@ img {
 
 .hero-project h2 {
     position:absolute;
+    justify-content: center;
     top: 15px;
 }
 
 .hero-project p {
     position: absolute;
     top: 50px;
-    /* display: none; */
 }
 
+.other-projects {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 5%;
+    width: 49%;
+}
+
+.other-projects img {
+    height: 30vh;
+    width: 100%;
+    opacity: 75%;
+    border: 1px solid white;
+    box-shadow: 0px 0px 15px rgb(233, 252, 66);
+}
+
+.other-projects h2 {
+    position: absolute;
+    top: 15px;
+}
+
+.other-projects p {
+    position: absolute;
+    top: 50px;
+}
 /* Best media screen widths? Eg Small Screen (max-width 992?) and Mobile (max-width 768?) */
