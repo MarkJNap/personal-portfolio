@@ -75,7 +75,7 @@ span {
 .hero-image {
     width: 100%;
     min-height: 100vh;
-    background-image:url("/assets/images/stars-bright.jpg");
+    background-image:url("/assets/css/stars-bright.jpg");
     background-size:cover;
     background-position:center;
     position: fixed;
@@ -260,7 +260,7 @@ img {
 }
 
 .contact a {
-    display: flex;
+    display: inline-block;
     font-size: 15px;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -350,3 +350,28 @@ img {
     
 }
     
+@media only screen and (max-width: 768px) {
+
+    header {
+        padding-bottom: 0px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .navbar ul {
+        justify-content: space-between;
+    }
+
+    .navbar a {
+        font-size: 10px;
+    }
+    .hero-project img {
+        height: 100%;
+    }
+    .other-projects img {
+        height: 100%;
+    }
+    .contact ul {
+        justify-content: space-between;
+    }
+}
